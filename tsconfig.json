@@ -18,8 +18,10 @@
     "baseUrl": "./src",
     "paths": {
       "@assets/*": ["assets/*"],
-      "@components/*": ["components/*"],
-      "@pages/*": ["pages/*"],
+      "@atoms/*": ["components/atoms/*"],
+      "@molecules/*": ["components/molecules/*"],
+      "@organisms/*": ["components/organisms/*"],
+      "@pages/*": ["components/pages/*"],
       "@styles/*": ["styles/*"],
       "@hooks/*": ["hooks/*"],
       "@contexts/*": ["contexts/*"],
