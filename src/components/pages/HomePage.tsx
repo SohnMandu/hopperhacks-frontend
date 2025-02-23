@@ -71,9 +71,7 @@ const SignUpPage: React.FC = () => {
         Alert
       </Button>
       <Dialog open={open} onClose={() => handleCloseDialog(false)}>
-        <DialogTitle>
-          Are you sure you need help?
-        </DialogTitle>
+        <DialogTitle>Are you sure you need help?</DialogTitle>
         <DialogActions>
           <Button onClick={() => handleCloseDialog(false)} color="primary">
             No
@@ -95,12 +93,44 @@ const SignUpPage: React.FC = () => {
           width: "100%",
           backgroundColor: "white",
           boxShadow: 3,
+          "& .MuiTabs-indicator": {
+            backgroundColor: "#d32f2f",
+            height: "4px",
+          },
         }}
       >
-        <Tab icon={<HomeIcon />} />
-        <Tab icon={<SearchIcon />} />
-        <Tab icon={<ModeCommentIcon />} />
-        <Tab icon={<AccountCircleIcon />} />
+        <Tab
+          sx={{
+            color: "#980000",
+            "&.Mui-selected": { color: "#cc0000" },
+            "&:hover": { color: "#cc0000" },
+          }}
+          icon={<HomeIcon />}
+        />
+        <Tab
+          sx={{
+            color: "#980000",
+            "&.Mui-selected": { color: "#cc0000" },
+            "&:hover": { color: "#cc0000" },
+          }}
+          icon={<SearchIcon />}
+        />
+        <Tab
+          sx={{
+            color: "#980000",
+            "&.Mui-selected": { color: "#cc0000" },
+            "&:hover": { color: "#cc0000" },
+          }}
+          icon={<ModeCommentIcon />}
+        />
+        <Tab
+          sx={{
+            color: "#980000",
+            "&.Mui-selected": { color: "#cc0000" },
+            "&:hover": { color: "#cc0000" },
+          }}
+          icon={<AccountCircleIcon />}
+        />
       </Tabs>
     </Container>
   );
