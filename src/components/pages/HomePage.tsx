@@ -67,9 +67,19 @@ const SignUpPage: React.FC = () => {
           </GoogleMap>
         </LoadScript>
       </Box>
-      <Button variant="contained" color="error" onClick={handleOpenDialog}>
-        Alert
-      </Button>
+      <Box
+        sx={{
+          position: "fixed",
+          bottom: "5rem",
+          left: "50%",
+          transform: "translateX(-50%)",
+          zIndex: 10,
+        }}
+      >
+        <Button variant="contained" color="error" onClick={handleOpenDialog}>
+          Alert
+        </Button>
+      </Box>
       <Dialog open={open} onClose={() => handleCloseDialog(false)}>
         <DialogTitle>Are you sure you need help?</DialogTitle>
         <DialogActions>
